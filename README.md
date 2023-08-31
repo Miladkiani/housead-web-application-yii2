@@ -1,60 +1,59 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+# House Advertisement Web Application
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+This is a fullstack web application for house advertisements, developed using PHP Yii2 framework. Admin users can post advertisements, and the application includes push notification functionality.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+## Table of Contents
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+## Overview
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.com/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.com/yiisoft/yii2-app-advanced)
+This web application allows admin users to post and manage house advertisements. Users can view available houses for rent or sale. The application also includes push notification functionality to keep users updated about new advertisements.
 
-DIRECTORY STRUCTURE
--------------------
+## Installation
 
+To run this application locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+2. Navigate to the project directory: `cd your-repo`
+3. Install dependencies: `composer install`
+4. Configure the database connection in `config/db.php`
+5. Apply migrations: `php yii migrate`
+
+## Usage
+
+After installing and configuring the application, you can run it using the Yii development server:
+
+```bash
+php yii serve
 ```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+
+Access the application in your web browser at `http://localhost:8080`.
+
+## Features
+
+- Admin users can post and manage house advertisements
+- Users can view and search for houses based on criteria
+- Push notification functionality to notify users about new advertisements
+- Responsive user interface for seamless browsing on various devices
+
+## Technologies Used
+
+- PHP Yii2 framework
+- MySQL database
+- HTML, CSS, JavaScript
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow the [contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
