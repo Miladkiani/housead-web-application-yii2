@@ -1,0 +1,894 @@
+@font-face {
+    font-family: irsans-fa-number;
+    src: url(../font/iran_sans_light_fa_number.woff);
+}
+
+@font-face {
+    font-family: irsans;
+    src: url(../font/iran_sans_light.woff);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: irsans, serif !important;
+    /*height: 100%;*/
+}
+
+.fa-number {
+    font-family: irsans-fa-number, serif;
+}
+
+.title {
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+
+.title.light {
+    color: #fafafa;
+}
+
+.subtitle1 {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+
+.subtitle1.light {
+    color: #fafafa;
+}
+
+.body1 {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 0.9em;
+}
+
+.body2 {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 0.8em;
+}
+
+.menu{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.caption {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 0.6em;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.price span {
+    display: block;
+}
+
+.location span {
+    display: block;
+}
+
+
+.h-list {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.h-list span + span {
+    margin-right: 8px;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+/*************intro**************
+*********************************
+*********************************
+*********************************/
+
+.wrapper .intro {
+    height: 100%;
+    padding: 16px;
+    background: linear-gradient(#00E676 0%, #00E676 50%, white 50%, white 100%); /* W3C */
+}
+
+.wrapper .intro .intro-container {
+    margin: auto;
+    width: 90%;
+}
+
+.wrapper .intro .header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.wrapper .intro .main-container {
+    border-radius: 4px;
+    background: white;
+    padding: 16px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -o-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+}
+
+
+.intro .description {
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.intro .description p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.intro .main-container .version {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.intro .main-container .version div {
+    border: 1px solid #00C853;
+    border-radius: 3px;
+    text-align: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.intro .main-container .version div:hover {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -o-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+}
+
+.intro .main-container .version div + div {
+    margin-top: 16px;
+}
+
+.intro .main-container .version a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    display: block;
+    padding: 4px 8px;
+}
+
+
+.wrapper .intro .footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.wrapper .intro .footer span {
+    display: block;
+}
+
+/*********house-overview*********
+*********************************
+*********************************
+*********************************/
+.house-overview {
+    background: #eee;
+    height: 100%;
+    min-height: 100%;
+}
+
+.house-overview .nav-top {
+    background: rgb(38, 166, 154);
+    background: linear-gradient(45deg, rgba(38, 166, 154, 1) 0%, rgba(0, 200, 83, 1) 100%);
+    padding: 16px;
+    z-index: 1;
+}
+
+.house-overview .nav-top .toolbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.house-overview .nav-top .app-name i {
+    display: none;
+}
+
+.house-overview .nav-top .toolbar .nav-icon {
+    cursor: pointer;
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    right: 0;
+}
+
+.house-overview .main-container {
+    padding: 16px 0;
+}
+
+/********** sidebar  *********/
+/*******************************/
+/*******************************/
+/*******************************/
+.house-overview .sidebar {
+    height: 100%;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    -webkit-transform: translateX(101%);
+    -moz-transform: translateX(101%);
+    -o-transform: translateX(101%);
+    transform: translateX(101%);
+    overflow-x: hidden;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -o-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+}
+
+.house-overview .sidebar.show {
+    transform: translateX(0);
+}
+
+.house-overview .sidebar .sidebar-top {
+    background: rgb(38, 166, 154);
+    background: linear-gradient(45deg, rgba(38, 166, 154, 1) 0%, rgba(0, 200, 83, 1) 100%);
+    padding: 8px;
+}
+
+.house-overview .sidebar .sidebar-top .close-icon {
+    cursor: pointer;
+    font-size: xx-large;
+    color: #f2f2f2;
+}
+
+.house-overview .sidebar .sidebar-top span:last-child {
+    display: none;
+}
+
+
+.house-overview .sidebar .container {
+    padding: 16px;
+}
+
+.house-overview .sidebar .container .filter-group + .filter-group {
+    margin-top: 8px;
+}
+
+.house-overview .sidebar .container .filter-group .filter-group-item-list {
+    padding: 8px;
+}
+
+.house-overview .sidebar .container .filter-group-item input {
+    margin-left: 4px;
+}
+
+.house-overview .sidebar .filter-group-title:before {
+    content: '+ ';
+}
+
+.house-overview .sidebar .filter-group-title.open:before {
+    content: '- ';
+}
+
+.house-overview .sidebar .filter-group-title {
+    display: block;
+    padding: 4px 0;
+}
+
+.house-overview .sidebar .filter-group-title.open {
+    border-bottom: 1px outset rgba(0,0,0,0.25);
+}
+
+.house-overview .sidebar .filter-group-item-list {
+    display: none;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+.house-overview .sidebar .filter-group-item-list.show {
+    display: block;
+}
+
+.house-overview .sidebar .house-lease {
+    display: none;
+}
+
+.house-overview .sidebar .house-lease.show {
+    display: block;
+}
+
+.house-overview .sidebar .filter-group-item-list-price {
+    max-height: 250px;
+}
+
+.house-overview .sidebar .range-title {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.house-overview .sidebar .range-label-min {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.house-overview .sidebar .range-label-max {
+    display: inline-block;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    float: right;
+}
+
+
+.house-overview .range-slider {
+    clear: both;
+}
+
+.house-overview .pagination {
+    margin-top: 16px;
+}
+
+
+/********** house-list  *********/
+/*******************************/
+/*******************************/
+/*******************************/
+
+.house-overview .house-list-container {
+    padding: 0 16px;
+}
+
+.house-overview .house-list-container .empty{
+    margin: auto;
+    width: 80%;
+}
+
+.house-overview .house-list .house-item {
+    width: 100%;
+    border-radius: 2px;
+    display: block;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    -o-box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    box-shadow: 0 1px 3px 0 rgba(158, 158, 158, 1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #ffffff;
+
+}
+
+
+.house-overview .house-list .house-item:hover {
+    -webkit-box-shadow: 0 3px 9px 0 rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0 3px 9px 0 rgba(158, 158, 158, 1);
+    -o-box-shadow: 0 3px 9px 0 rgba(158, 158, 158, 1);
+    box-shadow: 0 3px 9px 0 rgba(158, 158, 158, 1);
+}
+
+.house-overview .house-list .house-item a {
+    text-decoration: none;
+}
+
+.house-overview .house-list .house-item + .house-item {
+    margin-top: 8px;
+}
+
+.house-overview .house-list .house-item .row1 {
+    position: relative;
+    height: 120px;
+    border-radius: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.house-overview .house-list .house-item .row1 span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 4px 16px;
+}
+
+.house-list .house-item .row2 {
+    display: flex;
+    margin: 4px 16px;
+}
+
+.house-list .house-item .price {
+    width: 69%;
+    margin: auto;
+}
+
+.house-list .house-item .location {
+    width: 39%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.house-list .house-item .row3 {
+    margin: 4px 16px;
+    text-align: right;
+}
+
+.house-list .pagination {
+    width: 100%;
+}
+
+/******** house-detail ***********/
+/*********************************/
+/*********************************/
+/*********************************/
+
+.house-detail {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.house-detail .top-nav {
+    background-color: #E0E0E0;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.house-detail .top-nav a {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.house-detail .gallery-container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.house-detail .preview-container {
+    position: relative;
+}
+
+.house-detail .gallery-container .slide {
+    display: none;
+}
+
+.house-detail .gallery-container .slide img {
+    height: 150px;
+}
+
+
+.house-detail .gallery-container .slide-prev,
+.house-detail .gallery-container .slide-next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.house-detail .gallery-container .slide-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.house-detail .gallery-container .slide-prev:hover,
+.house-detail .gallery-container .slide-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.house-detail .gallery-container .numbertext {
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.house-detail .gallery-container .gallery-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.house-detail .gallery-container .gallery-row .gallery-column {
+    float: left;
+    width: 16.66%;
+}
+
+.house-detail .gallery-container .gallery-row .gallery-column img {
+    height: 50px;
+}
+
+.house-detail .gallery-container .demo {
+    opacity: 0.6;
+}
+
+.house-detail .gallery-container .active,
+.house-detail .gallery-container .demo:hover {
+    opacity: 1;
+}
+
+
+.house-detail .detail-container {
+    margin-top: 16px;
+    clear: both;
+    width: 100%;
+}
+
+
+.house-detail .detail-container section {
+    clear: both;
+}
+
+.house-detail .detail-container section {
+    padding: 8px 16px;
+
+}
+
+.house-detail .detail-container section:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
+.house-detail .detail-container section .detail-row + .detail-row {
+    margin-top: 8px;
+}
+
+.house-detail .contact-info .label span::before {
+    content: '+ ';
+}
+
+.house-detail .contact-info .open span::before {
+    content: '- ';
+}
+
+.house-detail .contact-info .info {
+    display: none;
+}
+
+.house-detail .contact-info .show {
+    display: block;
+}
+
+
+.house-detail .desc span {
+    display: inline-block;
+}
+
+/*body{*/
+/*    background: #11998e;  !* fallback for old browsers *!*/
+/*background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  !* Chrome 10-25, Safari 5.1-6 *!*/
+/*background: linear-gradient(to right, #38ef7d, #11998e); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+/*}*/
+
+/*.smartphone {*/
+/*  position: relative;*/
+/*  width: 250px;*/
+/*  height: 480px;*/
+/*  margin: auto;*/
+/*  border: 16px black solid;*/
+/*  border-top-width: 60px;*/
+/*  border-bottom-width: 60px;*/
+/*  border-radius: 36px;*/
+/*  padding: 0;*/
+/*}*/
+
+
+/*!* The horizontal line on the top of the device *!*/
+/*.smartphone:before {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  width: 60px;*/
+/*  height: 5px;*/
+/*  position: absolute;*/
+/*  top: -30px;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*  background: #333;*/
+/*  border-radius: 10px;*/
+/*}*/
+
+/*!* The circle on the bottom of the device *!*/
+/*.smartphone:after {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  width: 35px;*/
+/*  height: 35px;*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  bottom: -65px;*/
+/*  transform: translate(-50%, -50%);*/
+/*  background: #333;*/
+/*  border-radius: 50%;*/
+/*}*/
+
+
+/*.smartphone  video{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/* padding: 0;*/
+/* margin:0;*/
+/* border: none;*/
+/*}*/
+
+
+/*.desc{*/
+/*	max-width: 60%;*/
+/*	margin:auto;*/
+/*	margin-top: 16px;*/
+/*	background: rgba(0, 0, 0, 0.5);*/
+/*	border-radius: 6px;*/
+/*	padding: 8px;*/
+/*	margin-bottom:16px;*/
+/*}*/
+
+/*p{*/
+/*	text-align: right;*/
+/*	color:#fff;*/
+/*	font-size:1.2em;*/
+
+/*}*/
+
+/*h3{*/
+/*	text-align: center;*/
+/*	color: #fff;*/
+/*}*/
+
+@media screen and (min-width: 600px) {
+
+    .body1 {
+        font-size: 0.8em;
+    }
+
+    .intro .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .intro .main-container .description {
+        border-left: 1px inset rgba(0, 0, 0, 0.10);
+        padding: 24px;
+        width: 60%;
+        height: 100%;
+    }
+
+
+    .intro .main-container .version {
+        width: 38%;
+    }
+
+    .intro .main-container .version div {
+        width: 70%;
+    }
+
+    .house-overview .sidebar {
+        width: 33%;
+    }
+
+    .house-overview .house-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .house-overview .house-list .house-item {
+        width: 48%;
+    }
+
+    .house-overview .house-list .house-item + .house-item {
+        margin-top: 0;
+    }
+
+    .house-overview .house-list .house-item {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .house-overview .house-list .house-item:nth-child(n+3) {
+        margin-top: 8px;
+    }
+
+    .house-detail .content {
+        display: flex;
+    }
+
+    .house-detail .top-nav {
+        margin-bottom: 16px;
+        padding: 16px;
+    }
+
+
+    .house-detail .gallery-container {
+        width: 38%;
+    }
+
+    .house-detail .detail-container {
+        width: 58%;
+    }
+
+    .house-detail .content > div {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+}
+
+
+@media screen and (min-width: 850px) {
+
+
+
+    .caption {
+        font-size: 0.7em;
+    }
+
+
+    .intro .intro-container .main-container {
+        height: 80%;
+    }
+
+    .intro .intro-container .title {
+        font-size: 2em;
+    }
+
+    .intro .main-container .version div {
+        width: 50%;
+    }
+
+    .intro .intro-container .description p {
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+
+    .house-overview .nav-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .house-overview .nav-top .app-name i {
+        display: inline-block;
+    }
+
+    .house-overview .nav-top .toolbar {
+        width: 30%;
+        justify-content: unset;
+        position: unset;
+    }
+
+    .house-overview .nav-top .search-bar {
+        width: 60%;
+    }
+
+    .house-overview .nav-top .nav-icon {
+        display: none;
+    }
+
+    .house-overview .house-list-container {
+        padding: 0;
+    }
+
+    .house-overview .main-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .house-overview .main-container .sidebar {
+        min-height: 100vh;
+        position: relative;
+        display: block;
+        width: 28%;
+        top: unset;
+        right: unset;
+        margin-right: 1%;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        transition: none;
+    }
+
+    .house-overview .main-container .sidebar .sidebar-top {
+        background: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .house-overview .main-container .sidebar span {
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    .house-overview .sidebar .sidebar-top span:last-child {
+        display: inline;
+    }
+
+    .house-overview .main-container .sidebar .close-icon {
+        display: none;
+    }
+
+    .house-overview .main-container .house-list-container {
+        width: 71%;
+    }
+
+    .house-detail .gallery-container .slide img {
+        height: 200px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .intro .intro-container {
+        width: 75%;
+    }
+
+    .house-overview .main-container {
+        padding: 24px 0;
+    }
+
+    .house-overview .main-container .sidebar {
+        width: 18%;
+    }
+
+    .house-overview .main-container .house-list-container {
+        width: 81%;
+    }
+
+    .house-overview .main-container .house-list .house-item {
+        width: 31.33%;
+    }
+
+    .house-overview .house-list .house-item + .house-item {
+        margin-top: 0;
+    }
+
+    .house-overview .house-list .house-item:nth-child(n+4) {
+        margin-top: 16px;
+    }
+
+
+    .house-detail .top-nav {
+
+        padding: 16px 24px;
+    }
+
+    .house-detail .h-list span + span {
+        margin-right: 16px;
+    }
+
+    .house-detail .gallery-container .slide img {
+        height: 250px;
+    }
+
+}
