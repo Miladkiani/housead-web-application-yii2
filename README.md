@@ -9,9 +9,7 @@ This is a fullstack web application for house advertisements, developed using PH
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -21,8 +19,8 @@ This web application allows admin users to post and manage house advertisements.
 
 To run this application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
+1. Clone the repository: `git clone https://github.com/Miladkiani/housead-web-application-yii2.git`
+2. Navigate to the project directory: `cd housead-web-application-yii2`
 3. Install dependencies: `composer install`
 4. Configure the database connection in `config/db.php`
 5. Apply migrations: `php yii migrate`
@@ -49,10 +47,6 @@ Access the application in your web browser at `http://localhost:8080`.
 - PHP Yii2 framework
 - MySQL database
 - HTML, CSS, JavaScript
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow the [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
